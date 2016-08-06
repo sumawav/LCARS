@@ -158,6 +158,35 @@ body {
   overflow: hidden;
 }
 
+/*.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}*/
+
+.album-cover-art {
+  position: relative;
+  left: 20%;
+  margin-top: 2rem;
+  z-index: 1;
+}
+
+.album-cover-art img{
+  position: relative;
+  width: 60%;
+  z-index: 2;
+}
+
+.boring-description {
+  text-align: justify;
+  margin: 1rem;
+}
+
+.boring-description p{
+  font-family: "Helvetica";
+  font-size: 20px;
+}
+
 .h-partition {
   position: relative;
   float: left;
