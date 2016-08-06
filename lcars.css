@@ -1,16 +1,22 @@
 @font-face {
   font-family: 'swiss911';
-  src:  url('../assets/fonts/tt0106m0.ttf') format('truetype');
+  src:  url('assets/fonts/tt0106m0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'helveticaUC';
+  src:  url('assets/fonts/Helvetica_Ultra_Compressed.ttf') format('truetype');
 }
 
 * {
-  /*margin: 0;*/
-  /*padding: 0;*/
+  margin: 0;
+  padding: 0;
 }
 
 body {
   background-color: black;
-  font-family: 'swiss911';
+  font-family: 'helveticaUC';
+  /*font-family: 'swiss911';*/
   font-size: 30px;
   color: white;
 }
@@ -18,30 +24,62 @@ body {
 .main-screen {
   height: 100%;
   width: 100%;
-  margin-left: 0px;
-  position: fixed;
+  /*margin: 5px;*/
+  /*position: fixed;*/
   overflow: hidden;
 }
 
-.top-left {
+.top-left-outer {
   position: absolute;;
-  border-radius: 50px;
-  width: 120%;
-  height: 120%;
+  border-radius: 50px 0px 0px 0px;
+  width: 100%;
+  height: 100%;
 }
 
-.bottom-left {
+.top-left-inner{
   position: absolute;
-  border-radius: 50px;
-  width: 120%;
-  top: -60px;
+  background-color: black;
+  /*border-style: solid;*/
+  /*border-color: green;*/
+  border-radius: 25px 0 0 0;
 
-  height: -webkit-calc(100% + 50px);
-  height: -moz-calc(100% + 50px);
-  height: -calc(100% + 50px);
+  width: -webkit-calc(100% - 150px);
+  width: -moz-calc(100% - 150px);
+  width: -calc(100% - 150px);
+  height: -webkit-calc(100% - 20px);
+  height: -moz-calc(100% - 20px);
+  height: -calc(100% - 20px);
+
+  margin-left: 150px;
+  top: 20px;
 }
 
-.top-left .left-button {
+.bottom-left-outer {
+  position: absolute;
+  border-radius: 0px 0px 0px 50px;
+  width: 100%;
+  height: 100%;
+}
+
+.bottom-left-inner{
+  position: absolute;
+  background-color: black;
+  /*border-style: solid;*/
+  /*border-color: green;*/
+  border-radius: 0px 0px 0px 25px;
+
+  width: -webkit-calc(100% - 150px);
+  width: -moz-calc(100% - 150px);
+  width: -calc(100% - 150px);
+  height: -webkit-calc(100% - 20px);
+  height: -moz-calc(100% - 20px);
+  height: -calc(100% - 20px);
+
+  margin-left: 150px;
+  bottom: 20px;
+}
+
+.top-left-outer .left-button {
   position: relative;
   border-color: black;
   border-style: solid;
@@ -52,7 +90,7 @@ body {
   top: 80px;
 }
 
-.bottom-left .left-button {
+.bottom-left-outer .left-button {
   position: relative;
   border-color: black;
   border-style: solid;
@@ -61,10 +99,6 @@ body {
   height: 80px;
   width: 150px;
   /*bottom: 0;*/
-}
-
-#spacer {
-  height: 25%;
 }
 
 .content {
@@ -97,107 +131,83 @@ body {
   height: 50px !important;
 }
 
-.inside-trim{
+
+.bottom-left-inner-screen {
   position: absolute;
-  background-color: black;
-  border-radius: 25px;
-  width: 100%;
-  height: 100%;
-  margin-left: 150px;
+  height: -webkit-calc(100% - 25px);
+  height: -moz-calc(100% - 25px);
+  height: -calc(100% - 25px);
+  width: -webkit-calc(100% - 25px);
+  width: -moz-calc(100% - 25px);
+  width: -calc(100% - 25px);
+  left: 25px;
+  bottom: 25px;
+  overflow: hidden;
 }
 
-.top-left .inside-trim {
-  top: 30px;
-}
-
-.bottom-left .inside-trim {
-  top: -30px;
-}
-
-.top-left .screen {
+.top-left-inner-screen {
   position: absolute;
-  height: 75%;
-  width: 100%;
+  height: -webkit-calc(100% - 25px);
+  height: -moz-calc(100% - 25px);
+  height: -calc(100% - 25px);
+  width: -webkit-calc(100% - 25px);
+  width: -moz-calc(100% - 25px);
+  width: -calc(100% - 25px);
+  left: 25px;
   top: 25px;
-  left: 25px;
   overflow: hidden;
-
-  background-color: gray;
-  border-color: red;
-  border-width: 2px;
-  border-style: solid;
-}
-
-.bottom-left .screen {
-  position: absolute;
-  height: -webkit-calc(100% - 100px);
-  height: -moz-calc(100% - 100px);
-  height: -calc(100% - 100px);
-  width: 100%;
-  top: 80px;
-  left: 25px;
-  /*bottom: 0px;*/
-  overflow: hidden;
-
-  background-color: gray;
-  border-color: red;
-  border-width: 2px;
-  border-style: solid;
 }
 
 .h-partition {
   position: relative;
-  margin-bottom: 4px;
+  float: left;
+  /*margin: 2px;*/
   overflow: hidden;
-
-  /*border-color: purple;
-  border-width: 2px;
-  border-style: solid;*/
+  height: 100%;
 }
+.h-partition.ten {width: 10%;}
+.h-partition.twenty {width: 20%;}
+.h-partition.thirty {width: 30%;}
+.h-partition.forty {width: 40%;}
+.h-partition.fifty {width: 50%;}
+.h-partition.sixty {width: 60%;}
+.h-partition.seventy {width: 70%;}
+.h-partition.eighty {width: 80%;}
+.h-partition.ninety {width: 90%;}
 
-.h-partition.half {
-  height: 50%;
+.v-partition {
+  position: relative;
+  margin-bottom: 2px;
+  overflow: hidden;
 }
+.v-partition.ten {height: 10%;}
+.v-partition.twenty {height: 20%;}
+.v-partition.thirty {height: 30%;}
+.v-partition.forty {height: 40%;}
+.v-partition.fifty {height: 50%;}
+.v-partition.sixty {height: 60%;}
+.v-partition.seventy {height: 70%;}
+.v-partition.eighty {height: 80%;}
+.v-partition.ninety {height: 90%;}
 
-.h-partition.quarter {
-  height: 30%;
-}
-
-.h-partition.three-quarter {
-  height: 75%;
+/*
+  DEBUG class ===============================
+*/
+.DEBUG{
+  /*background-color: gray;*/
+  -webkit-box-shadow:inset 0px 0px 0px 10px #f00;
+  -moz-box-shadow:inset 0px 0px 0px 10px #f00;
+  box-shadow:inset 0px 0px 0px 10px #f00;
 }
 
 /*
   colors ===============================
 */
-.color-A {
-  background-color: #FF9900;
-}
-
-.color-B {
-  background-color: #CC99CC;
-}
-
-.color-C {
-  background-color: #9999CC;
-}
-
-.color-D {
-  background-color: #CC6666;
-}
-
-.color-E {
-  background-color: #FFCC99;
-}
-
-.color-F {
-  background-color: #9999FF;
-}
-
-.color-G {
-  background-color: #FF9966;
-}
-
-.color-H {
-  background-color: #CC6699;
-}
+.color-A {background-color: #FF9900;}
+.color-B {background-color: #CC99CC;}
+.color-C {background-color: #9999CC;}
+.color-D {background-color: #CC6666;}
+.color-E {background-color: #FFCC99;}
+.color-F {background-color: #9999FF;}
+.color-G {background-color: #FF9966;}
+.color-H {background-color: #CC6699;}

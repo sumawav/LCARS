@@ -145,7 +145,7 @@ body {
   border-style: solid;
 }
 
-.h-partition {
+.v-partition {
   position: relative;
   margin-bottom: 4px;
   overflow: hidden;
@@ -155,15 +155,15 @@ body {
   border-style: solid;*/
 }
 
-.h-partition.half {
+.v-partition.half {
   height: 50%;
 }
 
-.h-partition.quarter {
+.v-partition.quarter {
   height: 30%;
 }
 
-.h-partition.three-quarter {
+.v-partition.three-quarter {
   height: 75%;
 }
 
