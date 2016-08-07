@@ -8,6 +8,11 @@
   src:  url('assets/fonts/Helvetica_Ultra_Compressed.ttf') format('truetype');
 }
 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -228,6 +233,10 @@ body {
   overflow: hidden;
 }
 
+.top-left-inner-screen.overflow-scroll {
+  overflow-y:auto;
+}
+
 /*.helper {
     display: inline-block;
     height: 100%;
@@ -279,15 +288,17 @@ body {
   margin-bottom: 2px;
   overflow: hidden;
 }
-.v-partition.ten {height: 10%;}
+.v-partition.ten    {height: 10%;}
 .v-partition.twenty {height: 20%;}
 .v-partition.thirty {height: 30%;}
-.v-partition.forty {height: 40%;}
-.v-partition.fifty {height: 50%;}
-.v-partition.sixty {height: 60%;}
-.v-partition.seventy {height: 70%;}
+.v-partition.forty  {height: 40%;}
+.v-partition.fifty  {height: 50%;}
+.v-partition.sixty  {height: 60%;}
+.v-partition.seventy{height: 70%;}
 .v-partition.eighty {height: 80%;}
 .v-partition.ninety {height: 90%;}
+.v-partition.rigid-small {height: 200px;}
+.v-partition.rigid-medium {height: 400px;}
 
 /*
   DEBUG class ===============================
