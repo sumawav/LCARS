@@ -1,0 +1,22 @@
+.album-cover-art {
+  position: relative;
+  left: 0%;
+  /*margin-top: 2rem;*/
+  z-index: 1;
+}
+
+.album-cover-art img{
+  position: relative;
+  width: 60%;
+  z-index: 2;
+}
+
+.boring-description {
+  text-align: justify;
+  margin: 1rem;
+}
+
+.boring-description p{
+  font-family: "Helvetica";
+  font-size: 20px;
+}
