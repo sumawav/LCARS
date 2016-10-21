@@ -20,3 +20,13 @@
   font-family: "Helvetica";
   font-size: 20px;
 }
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  width: 650px;
+  height: 500px;
+}

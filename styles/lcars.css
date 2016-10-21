@@ -146,6 +146,71 @@ body {
   top: 20px;
 }
 
+.NES-outer {
+  position: absolute;
+  border-radius: 0px 50px 50px 0px;
+  width: 100%;
+  height: 100%;
+  color: orange;
+}
+
+.NES-inner {
+  position: absolute;
+  background-color: black;
+  /*border-style: solid;*/
+  /*border-color: green;*/
+  border-radius: 0px 25px 25px 0px;
+
+  width: -webkit-calc(100% - 150px);
+  width: -moz-calc(100% - 150px);
+  width: -calc(100% - 150px);
+  height: -webkit-calc(100% - 40px);
+  height: -moz-calc(100% - 40px);
+  height: -calc(100% - 40px);
+
+  margin-right: 150px;
+  bottom: 20px;
+  top: 20px;
+}
+
+.SE-nub {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 10px 0px 0px 10px;
+  left: 0;
+  bottom: 0px;
+}
+
+.SE-nub.bg {
+  position: absolute;
+  background-color: black;
+  height: 20px;
+  width: 20px;
+  border-radius: 0;
+  left: 0;
+  bottom: 0px;
+}
+
+.NE-nub {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 10px 0px 0px 10px;
+  left: 0;
+  /*top: 0px;*/
+}
+
+.NE-nub.bg {
+  position: absolute;
+  background-color: black;
+  height: 20px;
+  width: 20px;
+  border-radius: 0;
+  left: 0;
+  /*top: 0px;*/
+}
+
 .left-button-container {
   position: absolute;
   top: 0;
@@ -317,6 +382,8 @@ body {
 
 .album-cover-art img{
   position: relative;
+  display: block;
+  margin: auto;
   width: 60%;
   z-index: 2;
 }
@@ -331,46 +398,46 @@ body {
   font-size: 20px;
 }
 
-.h-partition {
+.v-partition {
   position: relative;
   float: left;
   /*margin: 2px;*/
   overflow: hidden;
   height: 100%;
 }
-.h-partition.ten {width: 10%;}
-.h-partition.twenty {width: 20%;}
-.h-partition.thirty {width: 30%;}
-.h-partition.forty {width: 40%;}
-.h-partition.fifty {width: 50%;}
-.h-partition.sixty {width: 60%;}
-.h-partition.seventy {width: 70%;}
-.h-partition.eighty {width: 80%;}
-.h-partition.ninety {width: 90%;}
+.v-partition.ten {width: 10%;}
+.v-partition.twenty {width: 20%;}
+.v-partition.thirty {width: 30%;}
+.v-partition.forty {width: 40%;}
+.v-partition.fifty {width: 50%;}
+.v-partition.sixty {width: 60%;}
+.v-partition.seventy {width: 70%;}
+.v-partition.eighty {width: 80%;}
+.v-partition.ninety {width: 90%;}
 
-.h-partition.rigid-small {width: 200px;}
-.h-partition.rigid-medium {width: 400px;}
-.h-partition.rigid-large {width: 600px;}
-.h-partition.rigid-huge {width: 800px;}
+.v-partition.rigid-small {width: 200px;}
+.v-partition.rigid-medium {width: 400px;}
+.v-partition.rigid-large {width: 600px;}
+.v-partition.rigid-huge {width: 800px;}
 
-.v-partition {
+.h-partition {
   position: relative;
   margin-bottom: 4px;
   overflow: hidden;
 }
-.v-partition.ten    {height: 10%;}
-.v-partition.twenty {height: 20%;}
-.v-partition.thirty {height: 30%;}
-.v-partition.forty  {height: 40%;}
-.v-partition.fifty  {height: 50%;}
-.v-partition.sixty  {height: 60%;}
-.v-partition.seventy{height: 70%;}
-.v-partition.eighty {height: 80%;}
-.v-partition.ninety {height: 90%;}
-.v-partition.rigid-small {height: 200px;}
-.v-partition.rigid-medium {height: 400px;}
-.v-partition.rigid-large {height: 600px;}
-.v-partition.rigid-huge {height: 800px;}
+.h-partition.ten    {height: 10%;}
+.h-partition.twenty {height: 20%;}
+.h-partition.thirty {height: 30%;}
+.h-partition.forty  {height: 40%;}
+.h-partition.fifty  {height: 50%;}
+.h-partition.sixty  {height: 60%;}
+.h-partition.seventy{height: 70%;}
+.h-partition.eighty {height: 80%;}
+.h-partition.ninety {height: 90%;}
+.h-partition.rigid-small {height: 200px;}
+.h-partition.rigid-medium {height: 400px;}
+.h-partition.rigid-large {height: 600px;}
+.h-partition.rigid-huge {height: 800px;}
 
 /*
   DEBUG class ===============================

@@ -299,46 +299,46 @@ body {
   font-size: 20px;
 }
 
-.h-partition {
+.v-partition {
   position: relative;
   float: left;
   /*margin: 2px;*/
   overflow: hidden;
   height: 100%;
 }
-.h-partition.ten {width: 10%;}
-.h-partition.twenty {width: 20%;}
-.h-partition.thirty {width: 30%;}
-.h-partition.forty {width: 40%;}
-.h-partition.fifty {width: 50%;}
-.h-partition.sixty {width: 60%;}
-.h-partition.seventy {width: 70%;}
-.h-partition.eighty {width: 80%;}
-.h-partition.ninety {width: 90%;}
+.v-partition.ten {width: 10%;}
+.v-partition.twenty {width: 20%;}
+.v-partition.thirty {width: 30%;}
+.v-partition.forty {width: 40%;}
+.v-partition.fifty {width: 50%;}
+.v-partition.sixty {width: 60%;}
+.v-partition.seventy {width: 70%;}
+.v-partition.eighty {width: 80%;}
+.v-partition.ninety {width: 90%;}
 
-.h-partition.rigid-small {width: 200px;}
-.h-partition.rigid-medium {width: 400px;}
-.h-partition.rigid-large {width: 600px;}
-.h-partition.rigid-huge {width: 800px;}
+.v-partition.rigid-small {width: 200px;}
+.v-partition.rigid-medium {width: 400px;}
+.v-partition.rigid-large {width: 600px;}
+.v-partition.rigid-huge {width: 800px;}
 
-.v-partition {
+.h-partition {
   position: relative;
   margin-bottom: 4px;
   overflow: hidden;
 }
-.v-partition.ten    {height: 10%;}
-.v-partition.twenty {height: 20%;}
-.v-partition.thirty {height: 30%;}
-.v-partition.forty  {height: 40%;}
-.v-partition.fifty  {height: 50%;}
-.v-partition.sixty  {height: 60%;}
-.v-partition.seventy{height: 70%;}
-.v-partition.eighty {height: 80%;}
-.v-partition.ninety {height: 90%;}
-.v-partition.rigid-small {height: 200px;}
-.v-partition.rigid-medium {height: 400px;}
-.v-partition.rigid-large {height: 600px;}
-.v-partition.rigid-huge {height: 800px;}
+.h-partition.ten    {height: 10%;}
+.h-partition.twenty {height: 20%;}
+.h-partition.thirty {height: 30%;}
+.h-partition.forty  {height: 40%;}
+.h-partition.fifty  {height: 50%;}
+.h-partition.sixty  {height: 60%;}
+.h-partition.seventy{height: 70%;}
+.h-partition.eighty {height: 80%;}
+.h-partition.ninety {height: 90%;}
+.h-partition.rigid-small {height: 200px;}
+.h-partition.rigid-medium {height: 400px;}
+.h-partition.rigid-large {height: 600px;}
+.h-partition.rigid-huge {height: 800px;}
 
 /*
   DEBUG class ===============================
